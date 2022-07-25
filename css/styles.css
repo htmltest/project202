@@ -1,0 +1,86 @@
+*,
+*::before,
+*::after {outline:none; box-sizing:border-box}
+
+html {min-width:320px; height:100%}
+
+body {min-width:320px; height:100%; margin:0; padding:0; font:24px/36px GraphikLCG, sans-serif; color:#504F4F; background:#F7F2F0; -webkit-text-size-adjust:100%; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; overflow-anchor:none}
+
+@media screen and (max-width:1023px) {
+    body {font-size:20px; line-height:30px}
+}
+
+a {color:#000000; transition:all 0.2s}
+a:hover {color:#FF2F66; text-decoration:none}
+
+img {border:none; max-width:100%; height:auto}
+iframe {border:none; max-width:100%}
+
+::-ms-clear {display:none}
+
+strong, b {font-weight:500}
+
+h1 {margin:80px 0 40px 0; padding:0; font-weight:bold; font-size:50px; line-height:65px; color:#000000}
+p {margin:30px 0; padding:0}
+
+@media screen and (max-width:1023px) {
+    h1 {margin:30px 0 40px 0; font-size:40px; line-height:52px}
+    p {margin:20px 0}
+}
+
+.container {max-width:800px; margin:0 auto; padding:0 20px}
+.container::after {content:""; display:block; clear:both}
+
+.wrapper {width:100%; min-width:320px; min-height:100%; position:relative; overflow:hidden}
+.wrapper-inner {padding:0 0 120px 0}
+
+@media screen and (max-width:1023px) {
+    .wrapper-inner {padding:0 0 180px 0}
+}
+
+@media screen and (max-width:479px) {
+    .wrapper-inner {padding:0 0 200px 0}
+}
+
+header {height:80px; background:#000000}
+header::after {content:""; display:block; clear:both}
+
+.logo {float:left; margin:20px 0 0 20px; width:98px}
+.logo img {display:block; width:98px}
+
+footer {margin:-60px 0 0 0; height:60px; background:#FFFFFF; position:relative; padding:20px 20px 0 20px}
+
+@media screen and (max-width:1023px) {
+    footer {margin:-120px 0 0 0; height:120px; text-align:center}
+}
+
+@media screen and (max-width:479px) {
+    footer {margin:-140px 0 0 0; height:140px}
+}
+
+.copyrights {float:left; font-size:14px; line-height:21px; font-weight:300; color:#000000}
+.policy {float:right; font-size:12px; line-height:18px; font-weight:300; color:#000000}
+.policy a {font-weight:500; text-decoration:none}
+
+@media screen and (max-width:1023px) {
+    .copyrights {float:none; padding:0; font-size:18px; line-height:27px}
+    .policy {float:none; margin:7px 0 0 0; font-size:18px; line-height:27px}
+}
+
+@media screen and (max-width:479px) {
+    .copyrights {font-size:16px; line-height:24px}
+    .policy {font-size:16px; line-height:24px}
+}
+
+.audio {margin:40px 0; background:#FFFFFF; position:relative; height:80px}
+.audio audio {display:none}
+.play-btn {display:block; position:absolute; left:20px; top:20px; margin:0; padding:0; width:40px; height:40px; overflow:visible; outline:none; text-decoration:none; background:#4849A6; border:none; border-radius:50%; -webkit-appearance:none; cursor:pointer; box-sizing:border-box}
+.play-btn img {display:block; position:absolute; left:50%; top:50%; transform:translate(-50%, -50%)}
+.play-btn img:nth-child(2) {display:none}
+.audio.playing .play-btn img:nth-child(1) {display:none}
+.audio.playing .play-btn img:nth-child(2) {display:block}
+.play-time {position:absolute; right:20px; top:24px; font-size:14px; line-height:21px}
+.audio-title {position:absolute; left:78px; top:22px; font-size:16px; line-height:24px; font-weight:500; color:#000000}
+.audio-progress {position:absolute; left:78px; bottom:22px; right:20px; height:3px; background:#E5E5E5; cursor:pointer}
+.audio-progress::before {content:""; display:block; position:absolute; left:0; top:-10px; right:0; bottom:-10px}
+.audio-progress-current {position:absolute; left:0; top:0; bottom:0; background:#4849A6}
