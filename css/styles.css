@@ -141,6 +141,7 @@ footer {margin:-60px 0 0 0; height:60px; background:#FFFFFF; position:relative; 
 
 @media screen and (max-width:767px) {
     .collections {margin:50px 20px 0 20px}
+    .collection {margin:50px 0 0 0}
     .collection-name {position:relative; cursor:pointer}
     .collection-name span {color:#435391; border-bottom:1px dashed #435391; margin:0 20px 0 0}
     .collection-name img {display:block; width:19px; height:12px; position:absolute; right:0; top:17px; transition:transform 0.2s}
