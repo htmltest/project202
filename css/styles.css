@@ -105,6 +105,7 @@ footer {margin:-60px 0 0 0; height:60px; background:#FFFFFF; position:relative; 
 .collection:first-child {margin:0}
 .collection-title {font-weight:300; font-size:30px; line-height:39px; color:#000000}
 .collection-name {margin:5px 0 0 0; font-weight:bold; font-size:50px; line-height:65px; color:#000000}
+.collection-name img {display:none}
 .collection-list {margin:5px -10px 0 -10px; font-size:0; line-height:0; letter-spacing:-1px}
 .collection-item {display:inline-block; vertical-align:top; width:33.33%; padding:40px 10px 0 10px}
 .collection-item-photo {height:260px; padding:20px; background:#F3F3F0; line-height:220px; text-align:center}
@@ -140,6 +141,12 @@ footer {margin:-60px 0 0 0; height:60px; background:#FFFFFF; position:relative; 
 
 @media screen and (max-width:767px) {
     .collections {margin:50px 20px 0 20px}
+    .collection-name {position:relative; cursor:pointer}
+    .collection-name span {color:#435391; border-bottom:1px dashed #435391; margin:0 20px 0 0}
+    .collection-name img {display:block; width:19px; height:12px; position:absolute; right:0; top:17px; transition:transform 0.2s}
+    .collection.open .collection-name img {transform:rotate(-180deg)}
+    .collection-list {position:absolute; left:-9999px; top:-9999px; opacity:0; transition:opacity 0.2s}
+    .collection.open .collection-list {position:relative; left:auto; top:auto; opacity:1}
     .collection-item {width:50%}
     .collection-item-photo {height:210px; line-height:170px}
 }

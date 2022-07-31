@@ -63,6 +63,10 @@ $(document).ready(function() {
 
     });
 
+    $('.collection-name').click(function() {
+        $(this).parent().toggleClass('open');
+    });
+
 });
 
 function stopAllAudio() {
